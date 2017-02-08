@@ -29,34 +29,59 @@
   },
   "main": "lib/cascade-update.js",
   "scripts": {
+    "commitmsg": "validate-commit-msg",
     "lint": "eslint .",
     "pretest": "npm run lint",
+    "prepush": "npm test",
     "test": "nyc  --reporter=lcov --reporter=text --reporter=text-summary mocha test/*test.js",
     "test:watch": "npm run test -- -w",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
+    "@bubltechnology/customizable-commit-analyzer": "https://github.com/fullcube/customizable-commit-analyzer/tarball/364e96c6f590c20f82d76557a5fa0d4481c48c5f",
     "chai": "^3.5.0",
     "condition-circle": "^1.5.0",
+    "conventional-commit-types": "^2.1.0",
     "coveralls": "^2.11.16",
     "dirty-chai": "^1.2.2",
     "eslint": "2.13.1",
     "eslint-config-fullcube": "latest",
     "eslint-plugin-mocha": "latest",
+    "husky": "^0.13.1",
     "loopback": "^2.36.0",
     "mocha": "^3.2.0",
     "mocha-sinon": "^1.1.6",
     "nyc": "^10.1.2",
     "semantic-release": "^6.3.2",
     "sinon": "^1.17.6",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "validate-commit-msg": "^2.11.1"
   },
   "dependencies": {
     "lodash": "^4.17.2",
     "debug": "^2.3.3"
   },
   "release": {
-    "verifyConditions": "condition-circle"
+    "verifyConditions": "condition-circle",
+    "analyzeCommits": "@bubltechnology/customizable-commit-analyzer"
+  },
+  "config": {
+    "commitTypeMap": {
+      "feat": "minor",
+      "fix": "patch",
+      "docs": "patch",
+      "style": "patch",
+      "refactor": "patch",
+      "perf": "patch",
+      "test": "patch",
+      "build": "patch",
+      "ci": "patch",
+      "chore": "patch",
+      "revert": "patch"
+    },
+    "validate-commit-msg": {
+      "types": "conventional-commit-types"
+    }
   }
 }
