@@ -1,6 +1,11 @@
 CASCADE UPDATE MIXIN
 ================
 
+[![CircleCI](https://circleci.com/gh/fullcube/loopback-ds-cascade-update-mixin.svg?style=svg)](https://circleci.com/gh/fullcube/loopback-ds-cascade-update-mixin) [![Dependencies](http://img.shields.io/david/fullcube/loopback-ds-cascade-update-mixin.svg?style=flat)](https://david-dm.org/fullcube/loopback-ds-cascade-update-mixin)
+[![Coverage Status](https://coveralls.io/repos/github/fullcube/loopback-ds-cascade-update-mixin/badge.svg?branch=master)](https://coveralls.io/github/fullcube/loopback-ds-cascade-update-mixin?branch=master)
+
+
+
 This module is designed for the [Strongloop Loopback](https://github.com/strongloop/loopback) framework. It provides cascade update functionality with a simple configuration on your models. This can be used to keep property values synchronised across related models.
 
 INSTALL
