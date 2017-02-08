@@ -1,0 +1,62 @@
+{
+  "name": "loopback-ds-cascade-update-mixin",
+  "description": "Loopback cascade update mixin.",
+  "version": "0.0.0-development",
+  "author": {
+    "name": "Tom Kirkpatrick @mrfelton"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fullcube/loopback-ds-cascade-update-mixin.git"
+  },
+  "keywords": [
+    "loopback",
+    "strongloop",
+    "cascade"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fullcube/loopback-ds-cascade-update-mixin/issues"
+  },
+  "homepage": "https://github.com/fullcube/loopback-ds-cascade-update-mixin",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "lib/cascade-update.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "nyc  --reporter=lcov --reporter=text --reporter=text-summary mocha test/*test.js",
+    "test:watch": "npm run test -- -w",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "condition-circle": "^1.5.0",
+    "coveralls": "^2.11.16",
+    "dirty-chai": "^1.2.2",
+    "eslint": "2.13.1",
+    "eslint-config-fullcube": "latest",
+    "eslint-plugin-mocha": "latest",
+    "loopback": "^2.36.0",
+    "mocha": "^3.2.0",
+    "mocha-sinon": "^1.1.6",
+    "nyc": "^10.1.2",
+    "semantic-release": "^6.3.2",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "debug": "^2.3.3"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
+  }
+}

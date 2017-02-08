@@ -1,0 +1,9 @@
+{
+  "extends": "fullcube/mocha",
+  "root": true,
+  "globals": {
+    "loopback": true,
+    "expect": true,
+    "sinon": true
+  }
+}
