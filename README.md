@@ -1,6 +1,8 @@
 CASCADE UPDATE MIXIN
 ================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fullcube/loopback-ds-cascade-update-mixin.svg)](https://greenkeeper.io/)
+
 [![CircleCI](https://circleci.com/gh/fullcube/loopback-ds-cascade-update-mixin.svg?style=svg)](https://circleci.com/gh/fullcube/loopback-ds-cascade-update-mixin) [![Dependencies](http://img.shields.io/david/fullcube/loopback-ds-cascade-update-mixin.svg?style=flat)](https://david-dm.org/fullcube/loopback-ds-cascade-update-mixin)
 [![Coverage Status](https://coveralls.io/repos/github/fullcube/loopback-ds-cascade-update-mixin/badge.svg?branch=master)](https://coveralls.io/github/fullcube/loopback-ds-cascade-update-mixin?branch=master)
 
