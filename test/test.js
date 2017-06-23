@@ -1,7 +1,7 @@
 const loopback = require('loopback')
 
 const chai = require('chai')
-const expect = chai.expect
+const { expect } = chai
 
 chai.use(require('sinon-chai'))
 chai.use(require('dirty-chai'))
@@ -45,7 +45,6 @@ const Item = loopback.PersistedModel.extend('Item', {
       type: 'hasMany',
       model: 'Poly',
       polymorphic: {
-        as: 'poly',
         foreignKey: 'referenceId',
         discriminator: 'referenceType',
       },
