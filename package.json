@@ -42,7 +42,7 @@
     "@bubltechnology/customizable-commit-analyzer": "https://github.com/fullcube/customizable-commit-analyzer/tarball/364e96c6f590c20f82d76557a5fa0d4481c48c5f",
     "chai": "4.1.0",
     "condition-circle": "1.5.0",
-    "conventional-commit-types": "2.1.0",
+    "conventional-commit-types": "2.2.0",
     "coveralls": "2.13.1",
     "dirty-chai": "2.0.0",
     "eslint-config-fullcube": "^3.0.0",
