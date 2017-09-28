@@ -43,7 +43,7 @@
     "chai": "4.1.0",
     "condition-circle": "1.5.0",
     "conventional-commit-types": "2.2.0",
-    "coveralls": "2.13.1",
+    "coveralls": "2.13.2",
     "dirty-chai": "2.0.1",
     "eslint-config-fullcube": "^3.0.0",
     "husky": "0.14.1",
