@@ -47,7 +47,7 @@
     "dirty-chai": "2.0.1",
     "eslint-config-fullcube": "^3.0.0",
     "husky": "0.14.1",
-    "loopback": "3.8.0",
+    "loopback": "3.19.2",
     "mocha": "3.4.2",
     "mocha-sinon": "2.0.0",
     "nyc": "11.0.3",
