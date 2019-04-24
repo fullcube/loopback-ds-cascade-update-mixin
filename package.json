@@ -46,7 +46,7 @@
     "coveralls": "2.13.1",
     "dirty-chai": "2.0.1",
     "eslint-config-fullcube": "^3.0.0",
-    "husky": "0.14.1",
+    "husky": "2.0.0",
     "loopback": "3.8.0",
     "mocha": "3.4.2",
     "mocha-sinon": "2.0.0",
