@@ -57,7 +57,7 @@
     "validate-commit-msg": "2.12.3"
   },
   "dependencies": {
-    "bluebird": "^3.5.0",
+    "bluebird": "^3.7.0",
     "debug": "2.6.8",
     "lodash": "^4.17.4"
   },
